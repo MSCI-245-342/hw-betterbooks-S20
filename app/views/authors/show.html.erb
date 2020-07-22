@@ -1,0 +1,15 @@
+<p id="notice"><%= flash[:notice] %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @author.name %>
+
+<p><%= link_to 'Edit Author', edit_author_path(@author) %></p>
+    
+</p>
+
+<p>
+<%= link_to 'New Author', new_author_path %> |
+<%= link_to 'Show Authors', authors_path %> |
+<%= link_to 'Home', root_path %> 
+</p>

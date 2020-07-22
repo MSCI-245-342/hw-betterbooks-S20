@@ -1,0 +1,19 @@
+<h1>Delete User</h1>
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<%= form_with model: @user, local: true, method: 'delete' do |f| %>
+<%= f.submit "Confirm Delete" %>
+<% end %>
+
+<p>
+<%= link_to 'Show Users', users_path %> | 
+<%= link_to "Home", root_path %>
+</p>    
+

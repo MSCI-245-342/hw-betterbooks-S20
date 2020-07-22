@@ -1,0 +1,17 @@
+<p id="notice"><%= flash[:notice] %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+<%= link_to 'Edit User', edit_user_path(@user) %> |
+<%= link_to 'Show Users', users_path %> |
+<%= link_to "Home", root_path %>
+</p>
