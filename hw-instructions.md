@@ -102,7 +102,7 @@ Again, I copied my associations from the last homework.
 
 ## 3. Validations
 
-With our proper database design, we have a strong first line of defense against our database have bad data in it.  For example, our foreign keys make sure we don't reference items that don't exist.  Preventing null values makes sure we always have a value where we need one.  Never let your database go unprotected at the database level!
+With our proper database design, we have a strong first line of defense against our database having bad data in it.  For example, our foreign keys make sure we don't reference items that don't exist.  Preventing null values makes sure we always have a value where we need one.  Never let your database go unprotected at the database level!
 
 We cannot easily do all of our data control at the database level.  Certainly we can write check constraints, but lots of these will be easier to implement in our models.  For example, we can check email addresses for a correct format much easier in our User model than in the database.
 
